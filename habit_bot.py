@@ -18,7 +18,8 @@ logging.basicConfig(level=logging.INFO)
 # ───────────────────────────────────────────────
 # НАСТРОЙКИ — измени под себя
 # ───────────────────────────────────────────────
-BOT_TOKEN = "ВАШ_ТОКЕН_ЗДЕСЬ"          # Получи у @BotFather
+import os
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")         # Получи у @BotFather
 SEND_HOUR = 5                           # 08:00 по Москве (UTC+3)
 SEND_MINUTE = 0
 REMINDER_HOUR = 18                      # 21:00 по Москве (UTC+3)
