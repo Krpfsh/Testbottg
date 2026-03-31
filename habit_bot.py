@@ -1,8 +1,3 @@
-"""
-Telegram Habit Tracker Bot
-Зависимости: pip install python-telegram-bot==20.7 apscheduler
-"""
-
 import json
 import os
 import logging
